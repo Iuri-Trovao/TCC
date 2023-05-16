@@ -1,11 +1,15 @@
 const express = require('express')
+const MongoDB = require('mongoose')
+const bcrypt = require('bcryptjs')
 const app = express()
-const db = require('../db/db')
 
-app.get('./view/index.html', (req,res)=>{
-    res.send("hello world")
+app.get('/', function(req, res) {
+    res.end('hello world')
 })
 
-app.listen(8081, function(){
-    console.log('server on')
+// CONECTAR AO BANCO MONGODB
+
+
+app.listen(9000, () => {
+    console.log('Servidor online na porta: 9000')
 })
