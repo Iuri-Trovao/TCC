@@ -2,7 +2,7 @@ async function conexão(){
     const mysqli = require('mysql')
     const connect = mysqli.createConnection({
         host: 'localhost',
-        user: "root",
+        user: "Adim",
         password: "",
         database: "project-db",
         port: 3306
