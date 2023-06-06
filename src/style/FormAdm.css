@@ -54,6 +54,7 @@ span {
     outline: none;
     background-color:  rgb(21, 108, 247);
     color: #fff;
+    transition: 1s;
 }
 
 .btn:hover {
