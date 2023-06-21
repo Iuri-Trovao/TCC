@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,26 +8,22 @@
 header {
     background: #1d1e20;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
+    gap: 2rem;
     
+
 }
 
-nav li {
-   
-}
-
-nav li a {
-    display: block;
-    padding: 10px;
-    
-    
+nav li a{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
 }
