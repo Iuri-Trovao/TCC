@@ -1,6 +1,6 @@
 function DarkMode() {
     let body = document.body
-    body.classList.toggle("dark-mode:")
+    body.classList.toggle("dark-mode")
 
     var DarkMode = body.classList.contains("dark-mode")
     localStorage.setItem("darkMode", DarkMode)
