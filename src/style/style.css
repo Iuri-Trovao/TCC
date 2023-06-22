@@ -7,23 +7,23 @@
 
 header {
     background: #1d1e20;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     padding: 20px;
+    min-width: 120px;
+    max-width: 3000px;
 }
 
-nav ul {
-    display: flex;
+
+nav ul{
+
     list-style: none;
-    gap: 2rem;
-    
-
-}
-
-nav li a{
     display: flex;
     justify-content: flex-end;
-    text-decoration: none;
+    gap: 2rem;
+    
+}
+
+
+#conteiner-dark-mode {
+    display: flex;
+    justify-content: flex-end;
 }
