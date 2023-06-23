@@ -2,10 +2,6 @@
     background-color: rgb(48, 47, 47);
     color: white;
 }
-
-body.dark {
-    background: #292c35;
-  }
   
   .checkbox {
     opacity: 0;
