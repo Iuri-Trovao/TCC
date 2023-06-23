@@ -1,16 +1,6 @@
-function DarkMode() {
-    let body = document.body
-    body.classList.toggle("dark-mode")
+const chk = document.getElementById('chk')
 
-    var DarkMode = body.classList.contains("dark-mode")
-    localStorage.setItem("darkMode", DarkMode)
-}
-
-document.addEventListener("DOMContentLoaded", function(){
-    var DarkMode = localStorage.getItem("darkMode")
-    if (DarkMode === "true") {
-        document.body.classList.add("dark-mode")
-    }
-}) 
-
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+})
   
