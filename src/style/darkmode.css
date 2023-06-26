@@ -23,7 +23,6 @@
   
   }
   
-  
   .label .ball {
     background-color: #fff;
     border-radius: 50%;
@@ -34,10 +33,6 @@
     width: 22px;
     transform: translateX(0px);
     transition: transform 0.2s linear;
-  }
-  
-  .checkbox:checked + .label .ball {
-    transform: translateX(24px);
   }
   
   .fa-moon {
