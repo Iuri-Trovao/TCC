@@ -13,9 +13,9 @@ header {
 }
 
 nav ul {
-    display: flex;
+  justify-content: center ;
     list-style: none;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .nav-u{
@@ -107,5 +107,10 @@ aside ul {
   box-shadow: 0 0 8px aqua;
   cursor: grab;
   border: 2px solid aqua;
+}
+
+#mauricio {
+  text-align: center;
+  margin-top: 130px;
 }
 
