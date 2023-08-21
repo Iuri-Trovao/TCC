@@ -9,7 +9,7 @@
 
 header {
     background: #1d1e20;
-    padding: 20px;
+
 }
 
 nav ul {
@@ -109,8 +109,17 @@ aside ul {
   border: 2px solid aqua;
 }
 
-#mauricio {
-  text-align: center;
-  margin-top: 130px;
+
+
+.ban {
+  position: relative;
+  left: -40px;
+  height: 400px;
+  width: 102%;
+
+   
 }
+
+
+
 
