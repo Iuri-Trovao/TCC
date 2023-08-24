@@ -8,7 +8,7 @@
 
 
 body {
-  background-color: rgb(255, 249, 249);
+
 }
 
 header{
@@ -124,6 +124,11 @@ header nav ul li {
 /*main*/
 
 main {
-
-
+  background-color: #fff;
+  margin: auto;
+  height: 100vh;
+  max-width: 140vh; 
+  margin-top: 100px;
+  border-radius: 5px;
+  padding: 30px;
 }
