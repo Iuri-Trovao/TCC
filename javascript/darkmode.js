@@ -22,4 +22,3 @@ document.addEventListener("DOMContentLoaded", () => {
     check.style.transform = "translateX(0px)"
   }
 })
-
