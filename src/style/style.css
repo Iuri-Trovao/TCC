@@ -126,9 +126,46 @@ header nav ul li {
 main {
   background-color: #fff;
   margin: auto;
-  height: 100vh;
   max-width: 140vh; 
   margin-top: 100px;
   border-radius: 5px;
   padding: 30px;
 }
+
+main, .pai{
+  gap: 6rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.pai {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
+
+.filho {
+  border: 2px solid black;
+  width: 250px;
+  height: 250px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1020px) {
+  .pai{
+     flex-direction: column;
+     display: flex;
+  }
+
+  nav a{
+    display: none;
+  }
+}
+
