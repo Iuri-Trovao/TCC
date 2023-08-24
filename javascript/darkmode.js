@@ -1,9 +1,10 @@
 const chk = document.getElementById('chk')
 const check = document.getElementById('ball')
 const label = document.getElementById('label')
+const main = document.getElementById('main')
 
 chk.addEventListener('change', () => {
- var DarkMode = document.body.classList.toggle('dark-mode')
+ var DarkMode = main.classList.toggle('dark-mode')
   localStorage.setItem("darkmode", DarkMode)
   if(DarkMode === true) {
     check.style.transform = "translateX(24px)"
