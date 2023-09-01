@@ -1,3 +1,4 @@
+/* Regras Globais */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Corpo Principal */
 body {
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,8 +15,9 @@ body {
   background-image: url(/src/src/Amauricast\ \(9\).png);
 }
 
+/* NavBars Principal do Site */
 header{
-  background-color: #010102;
+  background-color: rgb(30, 30, 30);
 }
 
 .interface{
@@ -99,6 +101,47 @@ header nav ul li {
 
 }
 
+/* Botão Hamburguer */
+.button-menu{
+  height: 60px;
+  width: 100px;
+  background-color: rgb(30, 30, 30);
+  color: aliceblue;
+  border: none;
+  
+}
+.button-menu > svg {
+  height: 50px;
+  width: 50px;
+  
+}
+/* Menu Botão Hamburguer */
+.menu-mobile{
+  height: 500px;
+  width: 300px;
+  background: red;
+  position: absolute;
+  left: 725px;
+  top: 240px;
+
+  
+}
+
+/* Media Butão Hamburguer */
+@media (min-width: 1020px){
+  .button-menu{
+    display: none;
+  }
+  
+}
+@media (max-width: 1020px) and (min-width: 120px){
+
+  .button-menu{
+    display: block;
+
+  }
+}
+
 /*navegação2*/
 
 .navegacão-2 ul {
@@ -165,6 +208,10 @@ main, .pai{
   }
 
   nav a{
+    display: none;
+  }
+
+  .button-mode{
     display: none;
   }
 }
