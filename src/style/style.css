@@ -123,7 +123,56 @@ header nav ul li {
 
 }
 
+<<<<<<< HEAD
 
+=======
+/* Botão Hamburguer */
+.button-menu{
+  height: 60px;
+  width: 100px;
+  background-color: rgb(30, 30, 30);
+  color: aliceblue;
+  border: none;
+  
+}
+.button-menu > svg {
+  height: 50px;
+  width: 50px;
+  
+}
+/* Menu Botão Hamburguer */
+.menu-mobile{
+  height: 100%;
+  width: 300px;
+  background: #333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  z-index: 1000;
+  
+}
+.menu-mobile-none{
+  display: none;
+}
+
+/* Media Butão Hamburguer */
+@media (min-width: 1020px){
+  .button-menu{
+    display: none;
+  }
+  
+}
+@media (max-width: 1020px) and (min-width: 120px){
+
+  .button-menu{
+    display: block;
+
+  }
+}
+
+/*navegação2*/
+>>>>>>> 997c4b4e9debbcf1a17c4ed29991515a37775f99
 
 .navegacão-2 ul {
   
