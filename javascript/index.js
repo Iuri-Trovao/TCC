@@ -8,6 +8,7 @@ botao1.addEventListener('click', function(){
 })
 
 botao2.addEventListener('click', function(){
+    botao1.style.transition = '1.2s'
     botao1.style.display = 'block'
     botao2.style.display = 'none'
 })
