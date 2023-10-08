@@ -8,6 +8,7 @@
     <title>Amauricast</title>
     <link rel="stylesheet" href="/src/style/style.css">
     <link rel="stylesheet" href="/src/style/darkmode.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 <body>
@@ -30,16 +31,44 @@
   </nav>
 
   <!--dark mode-->
-     <input type="checkbox" class="checkbox" id="chk">
+      <div class="button-mode">
+        <input type="checkbox" class="checkbox" id="chk">
         
-     <label class="label" for="chk">
-       <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
-        <div class="ball"></div>
+        <label class="label" for="chk">
+        <i id="lua"  class="fas fa-moon"></i>
+        <i id="lua" class="fas fa-sun"></i>
+        <div class="ball" id="ball"></div>
      </label>
+      </div>
+     
   <!--dark mode-->
 
+  <!--botao-hambu-->
+  <div class="vvd">
+    <details>
+        <summary><i id="botao1" class="bi bi-list"></i><i id="botao2" class="bi bi-x-circle"></i></summary>
+        <div class="pai1">
+            <p><i id="botao3" class="bi bi-house-door"></i>inicio</p>
+            <p><i id="botao4" class="bi bi-fire"></i>em auta</p>
+            <div class="mode">
+              <input type="checkbox" class="checkbox" id="chk">
+              
+              <label class="label" for="chk">
+              <i id="lua"  class="fas fa-moon"></i>
+              <i id="lua" class="fas fa-sun"></i>
+              <div class="ball" id="ball"></div>
+           </label>
+            </div>
+            <hr>
+        </div>
+    </details>
+</div>
+  <!--botao-hambu-->
+
+
 </div><!--interface-->
+
+  
 
   </header>
 
@@ -53,15 +82,61 @@
     </ul>
   </nav> <!--navegacão-2-->
 
+  <div id="menu"></div>
+  <main id="main">
 
-  <main>
-
-    
     <section class="topo-do-site">
+      <div class="pai2">
+        <div class="subtitulo"></div>
+        <h2 class="h2">Amauricast</h2>
 
+       
+      </div>
+
+      <div class="pai3">
+        <h2 class="h2">ultimos ep</h2>
+        <div class="subtitulo1"></div>
+      </div>
+
+      <div class="pai">
+
+        <div class="filho">
+          <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        <div class="filho">
+          <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        <div class="filho">
+          <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        <div class="filho">
+          <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        <div class="filho">
+           <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        <div class="filho">
+          <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        <div class="filho">
+          <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        <div class="filho">
+          <img class="imagem1" src="/src/src/amauricast.png" alt="">
+        </div>
+
+        
+      
+
+        
     </section><!--topo-do-site-->
-
-    <div class="">
       
     </div><!--interface-->
   </main>
@@ -70,6 +145,7 @@
     
   </footer>
 
+  <script src="/javascript/index.js"></script>
   <script src="/javascript/darkmode.js"></script>
   <script src="https://kit.fontawesome.com/998c60ef77.js"></script>
 </body>
