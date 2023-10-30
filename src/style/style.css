@@ -8,15 +8,8 @@
 }
 
 /* Corpo Principal */
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-image: url(/src/src/Amauricast\ \(9\).png);
-  
-}
 
-.container1 {
+.body {
   width: 100%;
   height: 100%;
   --s: 200px; /* control the size */
@@ -45,6 +38,16 @@ body {
 .header{
   background-color: rgb(30, 30, 30);
   padding: 40px 4%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navegacão-2{
+  position: fixed;
+  width: 100%;
+  top: 15%;
+
 }
 
 
@@ -129,6 +132,7 @@ body {
   margin-top: 150px;
   border-radius: 5px;
   padding: 30px;
+  margin-top: 300px;
 }
 
 #main, .organizacao-noticias{
@@ -149,10 +153,6 @@ body {
   width: 500px;
   height:350px;
   border-radius: 10px;
-}
-
-.segunda-se{
-  
 }
 
 
@@ -360,7 +360,6 @@ ul{
 }
 
 
-
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -377,7 +376,6 @@ ul{
 /* footer */
 
 
-
 /*botao hanburguer*/
 
 
@@ -387,6 +385,10 @@ ul{
     position: fixed;
     width: 100%;
     
+  }
+
+  .dark{
+    display: none;
   }
 
   .header nav a {
@@ -407,6 +409,7 @@ ul{
     display: block;
     
   }
+
   .organizacao-noticias{
      flex-direction: column;
      display: flex;
@@ -416,4 +419,9 @@ ul{
   .button-mode{
     display: none;
   }
+
+  .navegacão-2{
+    display: none;
+  }
+
 }
