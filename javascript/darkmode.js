@@ -1,25 +1,33 @@
-const chk = document.getElementById('chk')
-const check = document.getElementById('ball')
-const label = document.getElementById('label')
-const main = document.getElementById('main')
+const toggleCheckbox = document.getElementById("toggle_checkbox");
+const mainElement = document.querySelector("main");
+var paragrafo = document.getElementById("paragrafo")
 
-chk.addEventListener('change', () => {
- var DarkMode = main.classList.toggle('dark-mode')
-  localStorage.setItem("darkmode", DarkMode)
-  if(DarkMode === true) {
-    check.style.transform = "translateX(24px)"
+toggleCheckbox.addEventListener("change", () => {
+  if (toggleCheckbox.checked) {
+    // Dark mode ativado
+    mainElement.style.backgroundColor = "#333";
+    mainElement.style.color = "#fff";
+    paragrafo.style.color = '#3455'
+    
+    localStorage.setItem("darkMode", "enabled");
   } else {
-    check.style.transform = "translateX(0px)"
+    // Dark mode desativado
+    mainElement.style.backgroundColor = "#fff";
+    mainElement.style.color = "#333";
+    
+    localStorage.setItem("darkMode", "disabled");
+    
   }
-})
+  
+});
 
-document.addEventListener("DOMContentLoaded", () => {
-  var isDarkMode = localStorage.getItem("darkmode") === "true"
-  if(isDarkMode) {
-    document.body.classList.add("dark-mode")
-    check.style.transform = "translateX(24px)"
-  } else {
-    document.body.classList.remove("dark-mode")
-    check.style.transform = "translateX(0px)"
+
+window.addEventListener("load", () => {
+  const darkMode = localStorage.getItem("darkMode");
+  if (darkMode === "enabled") {
+    toggleCheckbox.checked = true;
+    mainElement.style.backgroundColor = "#333";
+    mainElement.style.color = "#fff";
+    
   }
-})
+});
