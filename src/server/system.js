@@ -1,16 +1,16 @@
 const express = require('express')
-const moongoose = require('mongoose')
+const path = require('path')
 const bcrypt = require('bcryptjs')
-const User = require('..db/user.js')
+const app = express()
 
-// Conectar ao banco de dados MongoDB
-mongoose.connect(User, {
-    useNewUrlParse: true,
-    useUnifiedTopology: true
-})
-.then(() => {
-    console.log('Conectado ao MongoDB')
-})
+// Configurar o middleware para servir arquivos estáticos
+app.use(express.static(path.join(__dirname, 'view')));
+
+app.get('/', (req, res) => {
+    // Não é necessário renderizar o arquivo HTML, pois o middleware express.static já o serve
+    res.sendFile(path.join(__dirname, 'view', 'index.html'));
+});
+
 
 // Criação dos usuarios administradores
 const adminUsers = [
@@ -32,6 +32,6 @@ Promise.all(adminUsers.map(user => bcrypt.hash(user.password, saltRounds)))
 
 
 
-app.listen(10000, () => {
-    console.log('servidor rodando na porta 10000!!!')
+app.listen(8081, () => {
+    console.log('servidor rodando na porta 8081!!!')
 })
