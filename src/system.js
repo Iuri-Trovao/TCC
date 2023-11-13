@@ -3,18 +3,17 @@ const path = require('path');
 const bcrypt = require('bcryptjs');
 const app = express();
 
+// Middleware para processar o corpo da solicitação
+app.use(express.urlencoded({ extended: true }));
+
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'view', 'FormAdmin.html'));
-    
 });
+
 // Rota para renderizar o arquivo CSS específico
-app.get('/src/style/FormAdm.css', function(req, res){
+app.get('/src/style/FormAdm.css', function(req, res) {
     res.sendFile(path.join(__dirname, 'style', 'FormAdm.css'));
-})
-  
-
-
-
+});
 
 // Criação dos usuários administradores
 const adminUsers = [
@@ -28,9 +27,9 @@ const adminUsers = [
 // Criptografar as senhas dos usuários
 const saltRounds = 10;
 Promise.all(adminUsers.map(user => bcrypt.hash(user.password, saltRounds)))
-    .then(hashedPassword => {
-        adminUsers.forEach((user, index) => {
-            user.password = hashedPassword[index];
+    .then(hashedPasswords => {
+        hashedPasswords.forEach((hashedPassword, index) => {
+            adminUsers[index].password = hashedPassword;
         });
     })
     .catch(err => {
@@ -55,7 +54,7 @@ app.post('/login', (req, res) => {
                 }
             })
             .catch(err => {
-                console.error(err);
+                console.error('Erro ao comparar senhas:', err);
                 res.status(500).send('Erro interno no servidor');
             });
     } else {
