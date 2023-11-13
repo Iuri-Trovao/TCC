@@ -9,13 +9,13 @@
 </head>
 <body>
     <main class="menu">
-    <form method="post" action="../server/system.js">
+        <form method="post" action="/login"> <!-- Alterado o action para '/login' -->
             <div class="titulo-bloco">
                 <h1 class="titulo">log<span class="titulo">in</span></h1>
             </div>
-            <input class="input-user" type="text" placeholder="email">
-            <input class="input-password" type="password" placeholder="password">
-            <button class="btn">botao</button>
+            <input class="input-user" type="text" name="username" placeholder="email"> <!-- Adicionado o atributo 'name' -->
+            <input class="input-password" type="password" name="password" placeholder="password"> <!-- Adicionado o atributo 'name' -->
+            <button class="btn" type="submit">botao</button> <!-- Adicionado o atributo 'type' -->
         </form>
     </main>
 </body>
