@@ -5,8 +5,14 @@ const app = express();
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'view', 'FormAdmin.html'));
+    
 });
-app.use(express.static('style'));
+// Rota para renderizar o arquivo CSS específico
+app.get('/src/style/FormAdm.css', function(req, res){
+    res.sendFile(path.join(__dirname, 'style', 'FormAdm.css'));
+})
+  
+
 
 
 
