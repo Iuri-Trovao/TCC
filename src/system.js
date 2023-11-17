@@ -37,6 +37,7 @@ Promise.all(adminUsers.map(user => bcrypt.hash(user.password, saltRounds)))
     });
 
 // Endpoint para lidar com o envio do formulário
+app.use(express.static(path.join(__dirname, 'view')))
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
@@ -48,7 +49,8 @@ app.post('/login', (req, res) => {
         bcrypt.compare(password, user.password)
             .then(result => {
                 if (result) {
-                    res.send('Login bem-sucedido!');
+                    res.redirect('/view/index.html')
+                    
                 } else {
                     res.send('Senha incorreta!');
                 }
