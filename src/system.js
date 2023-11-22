@@ -17,6 +17,7 @@ app.get('/src/style/FormAdm.css', function(req, res) {
 
 // Criação dos usuários administradores
 const adminUsers = [
+    {username: 'iuri', password: '1234'},
     { username: 'admin1', password: 'password1' },
     { username: 'admin2', password: 'password2' },
     { username: 'admin3', password: 'password3' },
@@ -49,7 +50,7 @@ app.post('/login', (req, res) => {
         bcrypt.compare(password, user.password)
             .then(result => {
                 if (result) {
-                    res.redirect('/view/index.html')
+                    res.send('Senha Correta!')
                     
                 } else {
                     res.send('Senha incorreta!');

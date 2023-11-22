@@ -42,6 +42,7 @@ span {
 .btn:hover {
     background-color: aqua;
     box-shadow: 1px 1px 10px aqua;
+    transform: translateY(-5px);
 }
 
 /* medias screen */
