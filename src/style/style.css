@@ -54,9 +54,9 @@
 }
 
 .navegacão-2 {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 55%;
+  top: 150px;
 
 }
 
@@ -99,8 +99,6 @@
   display: flex;
 }
 
-
-
 .logo {
   width: 100px;
   height: 100px;
@@ -118,7 +116,6 @@
   list-style: none;
   display: flex;
   gap: 2rem;
-  /* Reduzi o espaçamento para telas menores */
   justify-content: center;
 }
 
@@ -145,7 +142,8 @@
   margin-top: 150px;
   border-radius: 5px;
   padding: 60px;
-  margin-top: 300px;
+  margin-top: 200px;
+  
   
 }
 
@@ -398,6 +396,10 @@ ul {
   display: none;
 }
 
+.dark{
+  position: relative;
+  left: -60px;
+}
 /* footer */
 
 /*botao hanburguer*/
@@ -409,10 +411,15 @@ ul {
     display: none;
   }
 
+  .noticias {
+    width: 400px;
+
+  }
+
   .fass{
     display: block;
     position: relative;
-    top: 120px;
+  
   }
 
   .header {
@@ -458,5 +465,6 @@ ul {
   .navegacão-2 {
     display: none;
   }
+
 
 }
