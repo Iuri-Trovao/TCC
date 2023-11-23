@@ -17,7 +17,7 @@ app.get('/src/style/FormAdm.css', function(req, res) {
 
 // Criação dos usuários administradores
 const adminUsers = [
-    {username: 'iuri', password: '1234'},
+    {username: 'teste', password: '1234'},
     { username: 'admin1', password: 'password1' },
     { username: 'admin2', password: 'password2' },
     { username: 'admin3', password: 'password3' },
