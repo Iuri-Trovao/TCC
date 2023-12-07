@@ -378,6 +378,10 @@ ul {
   align-items: center;
 }
 
+#spotify{
+  font-size: 27px;
+}
+
 /*responsive*/
 @media(max-width: 767px) {
   .footer-col {
@@ -465,6 +469,8 @@ ul {
   .navegacão-2 {
     display: none;
   }
+
+
 
 
 }

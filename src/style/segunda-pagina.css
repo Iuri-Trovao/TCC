@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -22,7 +27,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 
 article {
@@ -30,7 +35,8 @@ article {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 15px;
   padding: 15px;
-  max-width: 600px;
+  width: 100%;
+  margin-top: 10px;
 
 }
 
@@ -66,3 +72,40 @@ footer {
   color: white;
 }
 
+.button {
+  font-family: monospace;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: .3s;
+  position: absolute;
+  top: 100%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1020px){
+  article {
+    width: 400px;
+    position: relative;
+    top: -120px;
+  }
+
+  .button{
+    position: absolute;
+    top: 90.9%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+}

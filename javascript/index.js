@@ -12,3 +12,5 @@ botao2.addEventListener('click', function(){
     botao1.style.display = 'block'
     botao2.style.display = 'none'
 })
+
+var sumir = document.getElementById("sumir")
