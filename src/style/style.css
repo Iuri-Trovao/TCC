@@ -257,7 +257,8 @@
 }
 
 .input{
-  margin-top: 53px;
+  position: relative;
+  top: -47.5px;
 }
 
 
