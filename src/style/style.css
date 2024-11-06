@@ -45,12 +45,13 @@
 
 /* NavBars Principal do Site */
 
-.header {
+.header /* cabecalho */ {
   background-color: rgb(30, 30, 30);
   padding: 40px 4%;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .navegacão-2 {
